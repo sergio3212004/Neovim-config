@@ -12,8 +12,19 @@ return {
     -- explorer = { enabled = true },
     -- indent = { enabled = true },
     lazygit = { enabled = true },
+    gh = { enabled = true },
     input = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      gh_issue = {
+        -- your gh_issue picker configuration comes here
+        -- or leave it empty to use the default settings
+      },
+      gh_pr = {
+        -- your gh_pr picker configuration comes here
+        -- or leave it empty to use the default settings
+      },
+    },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
