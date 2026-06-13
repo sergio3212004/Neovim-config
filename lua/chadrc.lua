@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "onedark",
+  theme = "neofusion",
 
   hl_override = {
     Comment = { italic = true },
@@ -18,6 +18,35 @@ M.base46 = {
 
 M.nvdash = { load_on_startup = true }
 M.ui = {
+  cmp = {
+    icons_left = true, -- only for non-atom styles!
+    style = "atom_colored", -- default/flat_light/flat_dark/atom/atom_colored
+    abbr_maxwidth = 60,
+    -- for tailwind, css lsp etc
+    format_colors = { lsp = true, icon = "󱓻" },
+  },
+
+  statusline = {
+    theme = "minimal",
+    separator_style = "round",
+    modules = {
+      lsp = function()
+        local clients = vim.lsp.get_clients { bufnr = 0 }
+
+        if #clients == 0 then
+          return " "
+        end
+
+        local names = {}
+
+        for _, client in ipairs(clients) do
+          table.insert(names, client.name)
+        end
+
+        return "  LSP ~ " .. table.concat(names, ", ") .. " "
+      end,
+    },
+  },
   tabufline = {
     lazyload = false,
   },
