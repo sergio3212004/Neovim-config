@@ -11,6 +11,7 @@ return {
     -- dashboard = { enabled = true },
     -- explorer = { enabled = true },
     -- indent = { enabled = true },
+    image = {},
     lazygit = { enabled = true },
     gh = { enabled = true },
     input = { enabled = true },
