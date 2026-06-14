@@ -1,11 +1,18 @@
 return {
   "nvzone/showkeys",
-  cmd = "ShowkeysToggle",
-  lazy = false,
+  event = "VeryLazy",
+
   opts = {
     timeout = 1,
     maxkeys = 5,
     position = "bottom-center",
-    -- more opts
   },
+
+  config = function(_, opts)
+    require("showkeys").setup(opts)
+
+    vim.schedule(function()
+      vim.cmd "ShowkeysToggle"
+    end)
+  end,
 }

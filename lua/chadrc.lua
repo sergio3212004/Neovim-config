@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "alien_blood",
+  theme = "cyberdream",
 
   hl_override = {
     Comment = { italic = true },
@@ -34,16 +34,16 @@ M.ui = {
         local clients = vim.lsp.get_clients { bufnr = 0 }
 
         if #clients == 0 then
-          return " "
+          return ""
         end
 
         local names = {}
 
         for _, client in ipairs(clients) do
-          table.insert(names, client.name)
+          names[#names + 1] = client.name
         end
 
-        return "  LSP ~ " .. table.concat(names, ", ") .. " "
+        return " %#St_Lsp#  LSP ~ " .. table.concat(names, ", ") .. " "
       end,
     },
   },

@@ -8,6 +8,7 @@ local servers = {
   "ts_ls",
   "tailwindcss",
   "clangd",
+  "marksman",
 }
 vim.lsp.enable(servers)
 
