@@ -64,3 +64,6 @@ end, { desc = "View PR diff" })
 map("n", "<leader>Gb", function()
   Snacks.gh.open { type = "issue", number = 123, repo = "owner/repo" }
 end, { desc = "Open issue/PR in buffer" })
+
+-- Showkeys
+map("n", "<localleader>s", "<cmd>ShowkeysToggle<cr>", { desc = "ShowKeysToggle" })
