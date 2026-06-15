@@ -8,7 +8,7 @@ local options = {
     c = { "clang-format" },
     cpp = { "clang-format" },
     python = { "isort", "black" },
-    tex = { "tex-fmt" },
+    tex = { "latexindent" },
     bib = { "bibtex-tidy" },
   },
 
