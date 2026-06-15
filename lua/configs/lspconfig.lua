@@ -9,6 +9,8 @@ local servers = {
   "tailwindcss",
   "clangd",
   "marksman",
+  "vue_ls",
+  "texlab",
 }
 vim.lsp.enable(servers)
 
