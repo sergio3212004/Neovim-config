@@ -3,6 +3,7 @@ return {
   event = "VeryLazy",
   opts = {
     -- add any options here
+    enable = false,
     lsp = {
       signature = {
         enabled = false,

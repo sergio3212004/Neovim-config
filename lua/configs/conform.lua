@@ -7,6 +7,9 @@ local options = {
     typescript = { "prettier", "prettierd" },
     c = { "clang-format" },
     cpp = { "clang-format" },
+    python = { "isort", "black" },
+    tex = { "tex-fmt" },
+    bib = { "bibtex-tidy" },
   },
 
   format_on_save = {
