@@ -28,6 +28,7 @@ return {
         "typescript",
         "javascript",
         "typescript",
+        "json",
         "python",
         "c",
         "cpp",

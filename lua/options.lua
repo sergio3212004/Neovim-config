@@ -8,5 +8,6 @@ o.cursorlineopt = "both" -- to enable cursorline!
 o.title = true
 o.cursorlineopt = "both"
 
+vim.opt.linebreak = true
 vim.opt.number = true
 vim.opt.relativenumber = true

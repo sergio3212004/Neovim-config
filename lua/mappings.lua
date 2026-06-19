@@ -8,7 +8,7 @@ local which_key = require "which-key"
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 map("n", "<C-t>", function()
   require("nvchad.themes").open { style = "flat" }
